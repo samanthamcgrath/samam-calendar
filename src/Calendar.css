@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.date-picker {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date-picker .header {
+    width: 100%;
+}
+
+.month-tab, .year-tab, .month-navigation {
+    float: left;
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.month-picker, .year-picker {
+    width: 100%;
+}
+
+.month-picker {
+    background-color: rgb(107, 135, 219);
+}
+
+.year-picker {
+    background-color: royalblue;
+}
+
+.select-a-month, .select-a-year {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(236, 232, 183);
+}
+
+.months, .years {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.months .month-button, .years .year-button {
+    width: 33%;
+    background-color: lightblue;
+}
+
+.month-button:hover,
+.month-button:focus,
+.year-button:hover,
+.year-button:focus {
+    background: #0053ba;
+}
+
+.current-year, .current-month {
+    width: 100%;
+}
+
+.month-navigation {
+    background-color: royalblue;
+}
+
+.nav-buttons {
+    display: flex;
+    width: 100%;
+}
+
+.prev-month, .next-month {
+    float: left;
+    width: 49%;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.day-button {
+    flex: 0 0 14%;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.day-button.current-month {
+    flex: 0 0 14%;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.day-button.selected {
+    background-color: rgb(130, 161, 172);
+}
+
+.day-button.today {
+    text-decoration: underline;
+}
+
+.day-button.current-month:hover,
+.day-button.current-month:focus {
+    background: #0053ba;
+}
+
+.day-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.day-names div {
+    flex: 0 0 11%;
+    padding: 5px;
+    background-color: rgb(236, 232, 183);
+    text-align: center;
+}
+
+.not-active {
+    display: none;
+}
